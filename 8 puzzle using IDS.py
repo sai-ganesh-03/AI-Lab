@@ -1,7 +1,7 @@
 import copy
 
-inp=[[1,2,5],[3,4,-1],[6,7,8]]
-out=[[-1,1,2],[3,4,5],[6,7,8]]
+inp=[[1,2,3],[-1,5,4],[6,7,8]]
+out=[[1,2,3],[5,4,-1],[6,7,8]]
 
 # print("Enter input puzzle")
 # for i in range(3):
@@ -48,7 +48,6 @@ def move(temp, movement):
             temp[i][j]=temp[i][j+1]
             temp[i][j+1]=-1
           return temp
-
 
 def ids():
   global inp
@@ -107,10 +106,10 @@ def ids():
 
 
 
-flag=False
+# flag=False
 
-if flag==False:
-  print('path not found')
+# if flag==False:
+#   print('path not found')
 
 print('~~~~~~~~~~~~ IDS ~~~~~~~~~~~~')
 ids()
